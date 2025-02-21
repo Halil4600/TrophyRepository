@@ -5,7 +5,7 @@
         private string competition;
         private int year;
 
-        public int id { get; set; }
+        public int Id { get; set; }
         
         public string Competition
         {
@@ -41,9 +41,20 @@
             }
         }
 
+        public Trophy(int id, string competition, int year)
+        {
+            Id = id;
+            Competition = competition;
+            Year = year;
+        }
+
+        public Trophy()
+        {
+        }
+
         public override string ToString()
         {
-            return $"Id: {id}, Competition: {Competition}, Year: {Year}";
+            return $"Id: {Id}, Competition: {Competition}, Year: {Year}";
         }
     }
 }

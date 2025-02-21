@@ -40,7 +40,7 @@ namespace Trophy.Tests
         [TestMethod()]
         public void ToStringTest()
         {
-            Trophy b = new Trophy { id = 1, Competition = "Champions League", Year = 2022};
+            Trophy b = new Trophy { Id = 1, Competition = "Champions League", Year = 2022};
             string expected = "Id: 1, Competition: Champions League, Year: 2022";
             Assert.AreEqual(expected, b.ToString());
         }
