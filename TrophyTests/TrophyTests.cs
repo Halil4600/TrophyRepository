@@ -31,7 +31,7 @@ namespace Trophy.Tests
             Assert.ThrowsException<ArgumentException>(() => a.Year = 1969);
 
             Trophy b = new Trophy();
-            Assert.AreEqual(1970, b.Year = 1970);
+            Assert.AreEqual(2000, b.Year = 2000);
 
             Trophy c = new Trophy();
             Assert.ThrowsException<ArgumentException>(() => c.Year = 2026);
